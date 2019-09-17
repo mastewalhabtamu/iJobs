@@ -45,7 +45,7 @@ class Login extends Component {
                                     <h2 className="form-title">Login</h2>
                                     <div className="form-group">
                                         <input type="number" className="form-input" name="email" maxlength="15"
-                                               minlength="10" id="email" placeholder="Phone Number"/>
+                                               minlength="10" id="email" placeholder="* Phone Number"/>
 
                                         <div className="form-group">
                                             <input type="submit" name="submit" id="submit" className="form-submit"
@@ -54,7 +54,7 @@ class Login extends Component {
                                     </div>
                                 </form>
                                 <p className="loginhere">
-                                    Forgot Phone number? <Link to="/login" className="loginhere-link">Click here to
+                                    Can't access your phone number? <Link to="/login" className="loginhere-link">Click here to
                                     fix</Link>
                                 </p>
                             </div>
