@@ -45,20 +45,20 @@ class Register extends Component {
                                 <form method="POST" id="signup-form" className="signup-form">
                                     <h2 className="form-title">Create account</h2>
                                     <div className="form-group">
-                                        <input type="text" className="form-input" name="name" id="name" placeholder="Your Name"/>
+                                        <input type="text" className="form-input" required name="name" id="name" placeholder="* Your Name"/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="email" className="form-input" name="email" id="email" placeholder="Your Email"/>
+                                        <input type="email" className="form-input"required  name="email" id="email" placeholder="* Your Email"/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="number" className="form-input" name="re_password" id="re_password" placeholder="Your phone Number"/>
+                                        <input type="number" className="form-input" name="re_password" required id="re_password" placeholder="* Your phone Number"/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" className="form-input" name="password" id="password" placeholder="Password"/>
+                                        <input type="text" className="form-input" name="password"  required id="password" placeholder="* Password"/>
                                         <span toggle="#password" className="zmdi zmdi-eye field-icon toggle-password"></span>
                                     </div>
                                     <div className="form-group">
-                                        <input type="password" className="form-input" name="re_password" id="re_password" placeholder="Repeat your password"/>
+                                        <input type="password" className="form-input" required name="re_password" id="re_password" placeholder="* Repeat your password"/>
                                     </div>
                                     <div className="form-group">
                                         <input type="checkbox" name="agree-term" id="agree-term" className="agree-term" />

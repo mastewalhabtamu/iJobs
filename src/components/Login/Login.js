@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css/'
 import Header from '../Header/Header'
-import Form from '../Forms/Form'
 import Footer from '../Footer/Footer'
 import {Link} from 'react-router-dom'
 import './login.css'
@@ -19,18 +18,18 @@ class Login extends Component {
         postSuccess: false
     };
 
-    handleSubmit = () => {
-        const user = {
-            fname: this.state.fname,
-            lname: this.state.lname,
-            email: this.state.email,
-            phone: this.state.phone
-        }
-        axios.post('https://gcelab-235621.firebaseio.com/user.json', user)
-            .then(response => {
-                this.setState({postSuccess: true})
-            });
-    }
+    // handleLogin = () => {
+    //     const user = {
+    //         fname: this.state.fname,
+    //         lname: this.state.lname,
+    //         email: this.state.email,
+    //         phone: this.state.phone
+    //     }
+    //     axios.post('https://gcelab-235621.firebaseio.com/user.json', user)
+    //         .then(response => {
+    //             this.setState({postSuccess: true})
+    //         });
+    // }
 
 
     render() {
@@ -50,7 +49,7 @@ class Login extends Component {
 
                                         <div className="form-group">
                                             <input type="submit" name="submit" id="submit" className="form-submit"
-                                                   value="Login"/>
+                                                   value="Login" />
                                         </div>
                                     </div>
                                 </form>

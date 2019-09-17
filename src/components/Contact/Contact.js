@@ -27,7 +27,7 @@ const Contact = () => {
                     <div className="col-8">
                         <h2 className="contact-title">Get in Touch</h2>
                     </div>
-                    <div className="col-lg-8">
+                    <div style={{marginLeft:'100px'}}>
                         <form className="form-contact contact_form" action="contact_process.php" method="post"
                               id="contactForm"
                               novalidate="novalidate">
