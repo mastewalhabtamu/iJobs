@@ -10,7 +10,6 @@ import '../../css/slicknav.css'
 import '../../css/style.css'
 import '../../css/bootstrap.min.css'
 import {Link} from 'react-router-dom'
-
 import jobs from '../../assets/images/iJobs.png'
 
 const Footer = () => {

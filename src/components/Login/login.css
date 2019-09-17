@@ -56,7 +56,6 @@ list-type-ulli {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: url("./fonts/montserrat/Montserrat-Bold.ttf");
     /* IE9 Compat Modes */
 }
 
@@ -128,14 +127,6 @@ input[type=radio] {
     -ms-appearance: radio !important;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-figure {
-    margin: 0;
-}
 
 p {
     margin-bottom: 0px;
@@ -177,7 +168,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     position: relative;
     margin: 0 auto;
 }

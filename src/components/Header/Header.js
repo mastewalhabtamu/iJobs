@@ -28,7 +28,7 @@ const Header =()=>{
                 <div id="sticky-header" className="main-header-area white-bg">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-xl-2 col-lg-2" style={{width: '10%', height: '10%'}}>
+                            <div className="col-xl-2 col-lg-2">
                                 <div className="logo-img">
                                     <Link to="/">
                                         <img src={logo} alt="Logo goes here"/>
@@ -43,8 +43,13 @@ const Header =()=>{
                                             <li><Link to="/about">About</Link></li>
                                             <li><Link to="/service">Services</Link></li>
                                             <li><Link to="/project">Projects</Link></li>
-                                            <li><Link to="/review">Review</Link></li>
                                             <li><Link to="/contact">Contact</Link></li>
+                                            <li><Link to="/">Payment</Link></li>
+                                            <li><Link to="/">Recent</Link></li>
+                                            <li><Link to="/">Updated</Link></li>
+                                            <li><Link to="/">Projects</Link></li>
+                                            <li><Link to="/">Projects</Link></li>
+                                            <li><Link to="/">Projects</Link></li>
                                         </ul>
                                     </nav>
                                 </div>

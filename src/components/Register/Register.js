@@ -40,7 +40,7 @@ class Register extends Component {
                 <div class="main">
 
                     <section className="signup">
-                        <div className="container">
+                        <div className="container" style={{width:'60%'}}>
                             <div className="signup-content">
                                 <form method="POST" id="signup-form" className="signup-form">
                                     <h2 className="form-title">Create account</h2>
