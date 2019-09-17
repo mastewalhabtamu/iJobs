@@ -10,27 +10,10 @@ import './login.css'
 
 
 class Login extends Component {
-    state = {
-        'fname': '',
-        'lname': '',
-        'email': 0,
-        'phone': 0,
-        postSuccess: false
-    };
 
-    // handleLogin = () => {
-    //     const user = {
-    //         fname: this.state.fname,
-    //         lname: this.state.lname,
-    //         email: this.state.email,
-    //         phone: this.state.phone
-    //     }
-    //     axios.post('https://gcelab-235621.firebaseio.com/user.json', user)
-    //         .then(response => {
-    //             this.setState({postSuccess: true})
-    //         });
-    // }
+    handleLogin = () => {
 
+    }
 
     render() {
         return (
@@ -39,9 +22,10 @@ class Login extends Component {
                 <div class="main">
 
                     <section className="signup">
-                        <div className="container" style={{width:'60%'}}>
+                        <div className="container" style={{width: '60%'}}>
                             <div className="signup-content">
-                                <form method="POST" id="signup-form" className="signup-form">
+                                <form method="POST" id="signup-form" onSubmit={this.handleLogin}
+                                      className="signup-form">
                                     <h2 className="form-title">Login</h2>
                                     <div className="form-group">
                                         <input type="number" className="form-input" name="email" maxlength="15"
@@ -49,12 +33,13 @@ class Login extends Component {
 
                                         <div className="form-group">
                                             <input type="submit" name="submit" id="submit" className="form-submit"
-                                                   value="Login" />
+                                                   value="Login"/>
                                         </div>
                                     </div>
                                 </form>
                                 <p className="loginhere">
-                                    Can't access your phone number? <Link to="/login" className="loginhere-link">Click here to
+                                    Can't access your phone number? <Link to="/login" className="loginhere-link">Click
+                                    here to
                                     fix</Link>
                                 </p>
                             </div>
@@ -64,8 +49,8 @@ class Login extends Component {
                 </div>
                 <Footer/>
             </Fragment>
-    );
+        );
     }
-    }
+}
 
-    export default Login
+export default Login
