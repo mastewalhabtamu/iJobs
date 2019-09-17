@@ -24,7 +24,7 @@ const Contact = () => {
             <Header/>
             <section>
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-8">
                         <h2 className="contact-title">Get in Touch</h2>
                     </div>
                     <div className="col-lg-8">
@@ -90,7 +90,7 @@ const Contact = () => {
                         <div className="media contact-info">
                             <span className="contact-info__icon"><i className="ti-email"></i></span>
                             <div className="media-body">
-                                <h3>support.iJobs@gmail.com</h3>
+                                <h3>support@iJobs.com</h3>
                                 <p>Send us your query anytime!</p>
                             </div>
                         </div>

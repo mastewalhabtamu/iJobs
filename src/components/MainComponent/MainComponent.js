@@ -9,13 +9,10 @@ import '../../css/flaticon.css'
 import '../../css/slicknav.css'
 import '../../css/style.css'
 import '../../css/bootstrap.min.css'
-import About from '../About/About'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Brand from '../Brand/Brand'
 import Form from '../Forms/Form'
-import Contact from '../Contact/Contact'
-import {Route} from 'react-router'
 import web from '../../assets/images/img/project/project-1.png'
 import ios from '../../assets/images/img/project/project-2.png'
 import android from '../../assets/images/img/project/project-3.png'
@@ -69,12 +66,6 @@ class MainComponent extends Component {
                         </div>
                     </div>
                 </div>
-                <Route path="/" exact component={MainComponent}/>
-                <Route path="/about" component={About}/>
-                <Route path="/contact" component={Contact}/>
-                <Route path="/register" component={Form}/>
-                <Route render={() => <h1>404 Page Not Found</h1>}/>
-
                 <Footer/>
             </Fragment>
         )

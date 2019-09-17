@@ -43,7 +43,6 @@ const Header =()=>{
                                             <li><Link to="/about">About</Link></li>
                                             <li><Link to="/service">Services</Link></li>
                                             <li><Link to="/project">Projects</Link></li>
-                                            <li><Link to="/project">New Posts</Link></li>
                                             <li><Link to="/review">Review</Link></li>
                                             <li><Link to="/contact">Contact</Link></li>
                                         </ul>

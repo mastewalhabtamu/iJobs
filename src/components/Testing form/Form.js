@@ -3,7 +3,7 @@ import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
 import TextField from '@material-ui/core/TextField';
 import {green} from '@material-ui/core/colors';
-import classes from './Form.module.css'
+import classes from '../Register/register.css'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button';
 import axios from 'axios';

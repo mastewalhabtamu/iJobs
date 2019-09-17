@@ -1,19 +1,13 @@
 import React, {Fragment, Component} from 'react';
-import {createMuiTheme} from '@material-ui/core/styles';
-import {ThemeProvider} from '@material-ui/styles';
-import TextField from '@material-ui/core/TextField';
-import {green} from '@material-ui/core/colors';
-import classes from './Form.module.css'
-import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button';
+import './register.css'
+import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css/'
+import Header from '../Header/Header'
+import Form from '../Forms/Form'
+import Footer from '../Footer/Footer'
+import {Link} from'react-router-dom'
 
-const theme = createMuiTheme({
-    palette: {
-        primary: green,
-    },
-});
 
 class Register extends Component {
     state = {
@@ -34,7 +28,6 @@ class Register extends Component {
         axios.post('https://gcelab-235621.firebaseio.com/user.json', user)
             .then(response => {
                 this.setState({postSuccess: true})
-                this.props.history.goBack()
             });
     }
 
@@ -42,70 +35,49 @@ class Register extends Component {
     render() {
         return (
             <Fragment>
-                <div className={classes.Content}>
-                    <ThemeProvider theme={theme}>
-                        <Typography className={classes.Right} variant="h3" component="h2">
-                            Create an Account
-                        </Typography>
-                        <div className={classes.Input}>
-                            <TextField
-                                value={this.state.fname}
-                                onChange={(event) => this.setState({vegName: event.target.value})}
-                                label="First Name"
-                                variant="outlined"
-                                id="mui-theme-provider-outlined-input"
-                            />
-                        </div>
-                        <div className={classes.Input}>
-                            <TextField
-                                value={this.state.lname}
-                                onChange={(event) => this.setState({upperPrice: event.target.value})}
-                                label="Last Name"
-                                type="text"
-                                variant="outlined"
-                                id="mui-theme-provider-outlined-input"
-                            />
-                        </div>
-                        <div className={classes.Input}>
-                            <TextField
-                                value={this.state.email}
-                                onChange={(event) => this.setState({lowerPrice: event.target.value})}
-                                label="Email"
-                                type="text"
-                                variant="outlined"
-                                id="mui-theme-provider-outlined-input"
-                            />
-                        </div>
-                        <div className={classes.Right}>
-                            <div className={classes.Input}>
-                                <TextField
-                                    value={this.state.phone}
-                                    onChange={(event) => this.setState({marketPlace: event.target.value})}
-                                    label="Phone"
-                                    variant="outlined"
-                                    id="mui-theme-provider-outlined-input"
-                                />
+                <Header/>
+                <Form/>
+                <div class="main">
+
+                    <section className="signup">
+                        <div className="container">
+                            <div className="signup-content">
+                                <form method="POST" id="signup-form" className="signup-form">
+                                    <h2 className="form-title">Create account</h2>
+                                    <div className="form-group">
+                                        <input type="text" className="form-input" name="name" id="name" placeholder="Your Name"/>
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="email" className="form-input" name="email" id="email" placeholder="Your Email"/>
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="number" className="form-input" name="re_password" id="re_password" placeholder="Your phone Number"/>
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="text" className="form-input" name="password" id="password" placeholder="Password"/>
+                                        <span toggle="#password" className="zmdi zmdi-eye field-icon toggle-password"></span>
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="password" className="form-input" name="re_password" id="re_password" placeholder="Repeat your password"/>
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="checkbox" name="agree-term" id="agree-term" className="agree-term" />
+                                        <label for="agree-term" className="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="submit" name="submit" id="submit" className="form-submit" value="Sign up"/>
+                                    </div>
+                                </form>
+                                <p className="loginhere">
+                                    Have already an account ? <Link to="/login" className="loginhere-link">Login here</Link>
+                                </p>
                             </div>
                         </div>
-                    </ThemeProvider>
-                </div>
-                <div style={{marginLeft: '50%', marginTop: '-70px'}}>
-                    <Button onClick={this.handleSubmit} variant="contained">
-                        Submit
-                    </Button>
-                </div>
-                <div className={classes.Alert}>
-                    <div style={{display: this.state.postSuccess ? 'block' : 'none'}}>
-                        <div class="alert alert-success" role="alert">Successful!!</div>
-                    </div>
-                    <div style={{
-                        display: !this.state.postSuccess ? 'block' : 'none',
-                        marginLeft: '40px'
-                    }}>
-                        <div class="alert alert-danger" role="alert">Sorry, try again!!</div>
-                    </div>
+                    </section>
+
                 </div>
 
+                <Footer/>
             </Fragment>
         );
     }
