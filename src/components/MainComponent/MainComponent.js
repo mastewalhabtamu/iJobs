@@ -13,9 +13,9 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Brand from '../Brand/Brand'
 import Form from '../Forms/Form'
-import web from '../../assets/images/img/project/project-1.png'
-import ios from '../../assets/images/img/project/project-2.png'
-import android from '../../assets/images/img/project/project-3.png'
+import mob from '../../assets/images/mobile.PNG'
+import web from '../../assets/images/web.PNG'
+import counsel from '../../assets/images/counsel.PNG'
 
 
 class MainComponent extends Component {
@@ -41,26 +41,26 @@ class MainComponent extends Component {
                                     <div class="service-thumb">
                                         <img src={web} alt=""/>
                                     </div>
-                                    <h3>Industrial construction</h3>
-                                    <p>Waters make fish every without firmament saw had. Morning air subdue.</p>
+                                    <h3>Mobile Solutions</h3>
+                                    <p>45% Freelancers find jobs online using their smartphones</p>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-md-4">
                                 <div class="single-service">
                                     <div class="service-thumb">
-                                        <img src={android} alt=""/>
+                                        <img src={mob} alt=""/>
                                     </div>
-                                    <h3>Mechanical engineering</h3>
-                                    <p>Waters make fish every without firmament saw had. Morning air subdue.</p>
+                                    <h3>Web Solutions</h3>
+                                    <p>Web App For at your conveniences</p>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-md-4">
                                 <div class="single-service">
                                     <div class="service-thumb">
-                                        <img src={ios} alt=""/>
+                                        <img src={counsel} alt=""/>
                                     </div>
-                                    <h3>Bridge construction</h3>
-                                    <p>Waters make fish every without firmament saw had. Morning air subdue.</p>
+                                    <h3>Business Counseling</h3>
+                                    <p>Get Guidance and Counseling At No Cost</p>
                                 </div>
                             </div>
                         </div>
