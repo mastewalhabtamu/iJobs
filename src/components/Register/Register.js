@@ -6,14 +6,13 @@ import Header from '../Header/Header'
 import Form from '../Forms/Form'
 import Footer from '../Footer/Footer'
 import {Link} from 'react-router-dom'
-import {withRouter} from 'react-router'
 import config from '../../base'
 
 
 class Register extends Component {
 
     state = {
-        name:'',
+        name: '',
         email: '',
         password: ''
     }
@@ -35,7 +34,6 @@ class Register extends Component {
         }
         console.log(email, password)
 
-
     }
 
 
@@ -53,15 +51,19 @@ class Register extends Component {
                                       className="signup-form">
                                     <h2 className="form-title">Create account</h2>
                                     <div className="form-group">
-                                        <input type="text" className="form-input"  value={(event)=>this.setState({name:event.target.value})} id="name"
+                                        <input type="text" className="form-input"
+                                               value={(event) => this.setState({name: event.target.value})} id="name"
                                                placeholder="* Your Name"/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="email" className="form-input" value={(event)=>this.setState({email:event.target.value})} id="email"
+                                        <input type="email" className="form-input"
+                                               value={(event) => this.setState({email: event.target.value})} id="email"
                                                placeholder="* Your Email"/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" className="form-input" value={(event)=>this.setState({password:event.target.value})} required id="password"
+                                        <input type="text" className="form-input"
+                                               value={(event) => this.setState({password: event.target.value})} required
+                                               id="password"
                                                placeholder="* Password"/>
                                         <span toggle="#password"
                                               className="zmdi zmdi-eye field-icon toggle-password"></span>
