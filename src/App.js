@@ -9,6 +9,7 @@ import Register from "./components/Register/Register";
 import Contact from "./components/Contact";
 import { Route, Switch } from "react-router-dom";
 
+
 function App() {
   return (
     <BrowserRouter>

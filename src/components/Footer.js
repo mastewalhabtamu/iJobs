@@ -21,9 +21,7 @@ const Footer = () => {
                     <div className="col-sm-6 col-md-3 col-xl-4">
                         <div className="single-footer-widget footer_1" style={{textAlign: 'center'}}>
                             <Link to="#"> <img src={jobs} alt=""/></Link>
-                            <p>Waters make fish every without firmament saw had. Morning air subdue very one.
-                                Whales grass
-                                is fish whales winged.</p>
+                            <p>Dont shrink your dreams! It does not matter how slowly you go as long as you do not stop. Confucius!</p>
                             <div className="social-links">
                                 <ul>
                                     <li><Link to="#"> <i className="fa fa-facebook"></i> </Link></li>

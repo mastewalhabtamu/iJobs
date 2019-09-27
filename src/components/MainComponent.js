@@ -1,9 +1,9 @@
-import React, {Component, Fragment} from "react";
+import React, { Component, Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../css/animate.css";
 import "../css/magnific-popup.css";
 import "../css/font-awesome.min.css";
-// import "../css/theme-default.css";
+
 import "../css/themify-icons.css";
 import "../css/nice-select.css";
 import "../css/flaticon.css";
@@ -26,25 +26,25 @@ class MainComponent extends Component {
     render() {
         return (
             <Fragment>
-                <Header/>
+                <Header />
                 {/* <Form /> */}
-                <Brand/>
-                <div class="service-area" style={{paddingBottom: 60, paddingTop: 60, background: '#f5f5f5'}}>
-                    <div class="container">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="section-title text-center mb-65">
+                <Brand />
+                <div className="service-area" style={{ paddingBottom: 60, paddingTop: 60, background: '#f5f5f5' }}>
+                    <div className="container">
+                        <div className="row align-items-center justify-content-center">
+                            <div className="section-title text-center mb-65">
                                 <span>OUR SERVICES</span>
                                 <h3>
-                                    We provide all of your <br/>
+                                    We provide all of your <br />
                                     solution
                                 </h3>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xl-4 col-md-4">
-                                <div class="single-service">
-                                    <div class="service-thumb">
-                                        <img src={web} alt=""/>
+                        <div className="row">
+                            <div className="col-xl-4 col-md-4">
+                                <div className="single-service">
+                                    <div className="service-thumb">
+                                        <img src={web} alt="" />
                                     </div>
                                     <h3>Mobile Solutions</h3>
                                     <p>
@@ -53,19 +53,19 @@ class MainComponent extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-md-4">
-                                <div class="single-service">
-                                    <div class="service-thumb">
-                                        <img src={mob} alt=""/>
+                            <div className="col-xl-4 col-md-4">
+                                <div className="single-service">
+                                    <div className="service-thumb">
+                                        <img src={mob} alt="" />
                                     </div>
                                     <h3>Web Solutions</h3>
                                     <p>Web App For at your conveniences</p>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-md-4">
-                                <div class="single-service">
-                                    <div class="service-thumb">
-                                        <img src={counsel} alt=""/>
+                            <div className="col-xl-4 col-md-4">
+                                <div className="single-service">
+                                    <div className="service-thumb">
+                                        <img src={counsel} alt="" />
                                     </div>
                                     <h3>Business Counseling</h3>
                                     <p>
@@ -77,16 +77,16 @@ class MainComponent extends Component {
                     </div>
                 </div>
                 {/*<!-- counter-start -->*/}
-                <div className="counter-area gray-bg" style={{background: '#fff'}}>
+                <div className="counter-area gray-bg" style={{ background: '#fff' }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-4 col-md-4">
                                 <div className="single-counter items_center justify_center">
                                     <div className="icon">
-                                        <img src={business_icon} alt=""/>
+                                        <img src={business_icon} alt="" />
                                     </div>
                                     <div className="counter-number">
-                                        <h3><span className="counter">400</span><span>+</span></h3>
+                                        <h3><span className="counter">90</span><span>+</span></h3>
                                         <p>Business <span>Completed</span></p>
                                     </div>
                                 </div>
@@ -94,10 +94,10 @@ class MainComponent extends Component {
                             <div className="col-xl-4 col-md-4">
                                 <div className="single-counter items_center justify_center">
                                     <div className="icon">
-                                        <img src={team_icon} alt=""/>
+                                        <img src={team_icon} alt="" />
                                     </div>
                                     <div className="counter-number">
-                                        <h3><span className="counter">30</span><span>+</span></h3>
+                                        <h3><span className="counter">16</span><span>+</span></h3>
                                         <p><span>Dedicated team</span> Business</p>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@ class MainComponent extends Component {
                             <div className="col-xl-4 col-md-4">
                                 <div className="single-counter items_center justify_center">
                                     <div className="icon">
-                                        <img src={love_icon} alt=""/>
+                                        <img src={love_icon} alt="" />
                                     </div>
                                     <div className="counter-number">
                                         <h3><span className="counter">350</span><span>+</span></h3>
@@ -117,7 +117,7 @@ class MainComponent extends Component {
                     </div>
                 </div>
                 {/*<!-- counter-start -->*/}
-                <Footer/>
+                <Footer />
             </Fragment>
         );
     }
