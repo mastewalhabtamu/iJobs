@@ -1,0 +1,25 @@
+/* limit partner companies brand logo */
+.brand_logo {
+    max-height: 142px;
+}
+
+/* vertical alignment neger */
+.items_center {
+    align-items: center;
+}
+
+/* horizontal alignment neger */
+.justify_center {
+    justify-content: center;
+}
+
+/* for inline kind of elements */
+.text_center {
+    text-align: center;
+}
+
+.bg_africa {
+    background-image: url('../assets/images/africa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
