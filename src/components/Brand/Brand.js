@@ -11,8 +11,6 @@ import '../../css/style.css'
 import '../../css/bootstrap.min.css'
 import br4 from '../../assets/images/img/brand/4.png'
 
-
-
 const Brand = () => {
     return (
         <Fragment>
