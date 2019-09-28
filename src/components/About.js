@@ -12,7 +12,7 @@ import {NavLink} from 'react-router-dom'
 import Footer from './Footer'
 import Header from './Header'
 import '../css/bootstrap.min.css'
-import yara from '../assets/images/yara.jpg'
+import masti from '../assets/images/masti.jpeg'
 import image from '../assets/images/image.jpg'
 import br4 from '../assets/images/img/brand/4.png'
 
@@ -76,7 +76,7 @@ const About = () => {
                         <div class="col-xl-6 col-lg-6 col-md-8">
                             <div class="single-team">
                                 <div class="team-thumb">
-                                    <img src={yara} alt=""/>
+                                    <img src={masti} alt=""/>
                                     <div class="team-hover">
                                         <div class="team-link">
                                             <ul>
@@ -90,7 +90,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div class="team-info text-center">
-                                    <h3>Yared Weldemeskel</h3>
+                                    <h3>Mastewal Degaga</h3>
                                     <p>Lead Software Engineer</p>
                                 </div>
                             </div>
